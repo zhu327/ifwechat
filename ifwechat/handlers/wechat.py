@@ -1,6 +1,6 @@
 # coding: utf-8
 
-import re, logging
+import re, logging, socket
 import werobot
 from werobot.utils import to_binary
 from ..utils import IfMaker, check_bind, add_event_task
@@ -30,7 +30,10 @@ def unsubscribe(message):
 def bind(message, session):
     key = message.content.lstrip('BD+').strip()
     ifmaker = IfMaker('ifmaker_test', key)
-    code, _ = ifmaker.fetch(value1='test')
+    try:
+        code, _ = ifmaker.fetch(value1='test')
+    except socket.timeout:
+        return u'请求超时,请重试.'
     if code != 200:
         return u'您的输入有误,请绑定正确的key.'
     session['key'] = key
