@@ -43,7 +43,7 @@ def bind(message, session):
 
 @robot.filter('help')
 def help(message):
-    return u'<a href="http://bozpy.sinaapp.com/blog/34">查看帮助</a>'
+    return u'<a href="https://github.com/zhu327/ifwechat/blob/master/README.md">查看帮助</a>'
 
 
 @robot.text
