@@ -13,16 +13,18 @@ IFTTT = if this then that, IFWechat通过微信公众号实现了IFTTT中this的
 
 ![qcode](http://7oti6o.com1.z0.glb.clouddn.com/boz-qcode.jpg)
 
-2.生成IFTTT Maker channel key
+2.生成IFTTT Maker Webhooks key
 
-访问[IFTTT Maker channel](https://ifttt.com/maker)  
-![IFTTT Maker channel](http://7oti6o.com1.z0.glb.clouddn.com/bozmakerchannel.png)  
-生成Maker channel key  
-![IFTTT Maker key](http://7oti6o.com1.z0.glb.clouddn.com/bozmakerkey.png)
+访问[IFTTT Maker Webhooks](https://ifttt.com/maker_webhooks)  
+![IFTTT Maker Webhooks](http://picbang.qiniudn.com/bozmakerchannel.jpg)
+
+点击**Connect**  
+访问[Settings](https://ifttt.com/services/maker_webhooks/settings),复制URL后面的key  
+![IFTTT Maker key](http://picbang.qiniudn.com/bozmakerchannel2.jpg)
 
 3.绑定key到IFWechat微信公众号
 
-![bind key](http://7oti6o.com1.z0.glb.clouddn.com/bozbind.png)
+![bind key](http://picbang.qiniudn.com/bozbind.jpg)
 
 发送 BD+key 绑定.
 
